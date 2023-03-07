@@ -1,20 +1,20 @@
-import React from "react";
-import * as Survey from "survey-react"; // import surveyjs
-import { questions } from "./content"; // these are the survey questions
+import React from 'react';
+import * as Survey from 'survey-react'; // import surveyjs
+import { questions } from '../../../../components/survey/content/index'; // these are the survey questions
 // Modern theme
-import "survey-react/modern.min.css";
+import 'survey-react/modern.min.css';
 // Default theme
 // import 'survey-react/survey.min.css';
 
 const SurveyComponent = () => {
   // Apply theme
-  Survey.StylesManager.applyTheme("modern");
+  Survey.StylesManager.applyTheme('modern');
 
   // Create a modal
   const survey = new Survey.Model(questions);
 
   survey.sendResultOnPageNext = true;
-  const storageName = "SurveyNextjs";
+  const storageName = 'SurveyNextjs';
   function saveSurveyData(survey) {
     const data = survey.data;
     data.pageNo = survey.currentPageNo;
@@ -40,9 +40,7 @@ const SurveyComponent = () => {
   });
 
   // Render the survey
-  return (
-      <Survey.Survey model={survey} />
-  );
+  return <Survey.Survey model={survey} />;
 };
 
 export default SurveyComponent;

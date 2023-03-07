@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
-import { AppProps } from 'next/app';
 import { api } from '../utils/api';
+import { type AppProps } from 'next/app';
 import { Header } from '../../components/layout/header';
 import { Layout } from '../../components/layout/layout';
 
