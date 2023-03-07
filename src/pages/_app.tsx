@@ -1,35 +1,20 @@
-import { type AppType } from "next/app";
-import { useRouter } from "next/router";
-import {
-  ClerkProvider,
-  RedirectToSignIn,
-  SignedIn,
-  SignedOut,
-} from "@clerk/nextjs";
-import { api } from "../utils/api";
+import '../styles/globals.css';
+import { AppProps } from 'next/app';
+import { ClerkProvider, SignedIn, UserButton } from '@clerk/nextjs';
+import { api } from '../utils/api';
+import { Header } from '../../components/layout/header';
+import { Layout } from '../../components/layout/layout';
 
-import "../styles/globals.css";
-
-const publicPages = ["/", "/sign-in/[[...index]]", "/sign-up/[[...index]]"];
-
-const MyApp: AppType = ({ Component, pageProps }) => {
-  const router = useRouter();
+function App({ Component, pageProps }: AppProps) {
   return (
     <ClerkProvider {...pageProps}>
-      {publicPages.includes(router.pathname) ? (
+      {' '}
+      <Layout>
+        <Header />
         <Component {...pageProps} />
-      ) : (
-        <>
-          <SignedIn>
-            <Component {...pageProps} />
-          </SignedIn>
-          <SignedOut>
-            <RedirectToSignIn />
-          </SignedOut>
-        </>
-      )}
+      </Layout>
     </ClerkProvider>
   );
-};
+}
 
-export default api.withTRPC(MyApp);
+export default api.withTRPC(App);
