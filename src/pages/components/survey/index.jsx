@@ -33,7 +33,7 @@ const SurveyComponent = () => {
     }
   }
 
-  survey.onComplete.add(function (survey, options) {
+  survey.onComplete.add(function (survey) {
     saveSurveyData(survey);
     console.log(survey.data);
     // window.location.href = "/survey/finish";

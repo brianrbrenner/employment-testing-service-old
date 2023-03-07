@@ -1,6 +1,6 @@
 import '../styles/globals.css';
+import { ClerkProvider } from '@clerk/nextjs';
 import { AppProps } from 'next/app';
-import { ClerkProvider, SignedIn, UserButton } from '@clerk/nextjs';
 import { api } from '../utils/api';
 import { Header } from '../../components/layout/header';
 import { Layout } from '../../components/layout/layout';
