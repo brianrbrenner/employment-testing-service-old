@@ -9,7 +9,7 @@ export const Header = () => {
           <Link href="/">
             <div className="items-center justify-center">
               <Image src="/ets.svg" width="32" height="32" alt="Logo" />
-              <span className="ml-4 items-center text-xs">
+              <span className="ml-4 items-center text-xl">
                 Employee Testing Service
               </span>
             </div>
