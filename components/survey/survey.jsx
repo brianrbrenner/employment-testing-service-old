@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Survey from 'survey-react'; // import surveyjs
-import { questions } from '../../../../components/survey/content/index'; // these are the survey questions
+import { questions } from '../survey/content/index'; // these are the survey questions
 // Modern theme
 import 'survey-react/modern.min.css';
 // Default theme

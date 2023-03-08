@@ -9,10 +9,9 @@ Requirements
 
 ## How to use
 
-1. Create a [Clerk account](https://dashboard.clerk.dev/sign-up)
-2. Copy `.env.example` and rename to `.env` and add your keys found in the dashboard.
-3. Run `yarn install`
-4. Run `yarn run dev`
+1. Copy `.env.example` and rename to `.env` and add your keys found in your clerk dashboard.
+2. Run `yarn install`
+3. Run `yarn run dev`
 
 ## Shoutouts
 
