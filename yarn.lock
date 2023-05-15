@@ -9,37 +9,36 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@clerk/backend@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@clerk/backend/-/backend-0.12.0.tgz#67db9cb1e8216753a66dd683e00dc27c3262a9e8"
-  integrity sha512-GeSuMfrMYr/hPqZlAo+6x86IUQAOA/6GStPOwAlT2msQ1dWMU+kKQCQZ4xIgtWrN216XJYvPkwmIrVDgwTaIXg==
+"@clerk/backend@^0.18.1":
+  version "0.18.1"
+  resolved "https://registry.yarnpkg.com/@clerk/backend/-/backend-0.18.1.tgz#23d2d1f216d043cbac8a8a69c4f263679a06473c"
+  integrity sha512-3xYuQ5QEaxMVZgX37IeQOkycJfQLu96Qf3T+0fjcAseC2NVgQmqTf63kvQpws5tXNdaWhCJrTVQH80TN1DDd/g==
   dependencies:
-    "@clerk/types" "^3.29.0"
+    "@clerk/types" "^3.36.1"
     "@peculiar/webcrypto" "1.4.1"
     "@types/node" "16.18.6"
     deepmerge "4.2.2"
     node-fetch-native "1.0.1"
-    rfc4648 "1.5.2"
     snakecase-keys "5.4.4"
     tslib "2.4.1"
 
-"@clerk/clerk-react@^4.12.2":
-  version "4.12.2"
-  resolved "https://registry.yarnpkg.com/@clerk/clerk-react/-/clerk-react-4.12.2.tgz#f9435fbad8402de051724233513fabf1cfd20481"
-  integrity sha512-fBPd4hZS3vZ5LDHSLxKj9AgS+wd3sURbHJ7CDMOjlugFXQEr7G8FFa/Sf5zGbV1GXVkQmmnLzu0rzl2ldo31Ow==
+"@clerk/clerk-react@^4.15.5":
+  version "4.15.5"
+  resolved "https://registry.yarnpkg.com/@clerk/clerk-react/-/clerk-react-4.15.5.tgz#351c7d1096f9333ddc3d81cf4a566276645b2136"
+  integrity sha512-hrG9jOFLkmJrl2BmnT9OiWK6lGlwDKHHR0kuCa01y682PsfGnYDwvSdxn7czW+ukE18k/G0tKYFIwFQQc7qlyw==
   dependencies:
-    "@clerk/shared" "^0.12.4"
-    "@clerk/types" "^3.29.0"
+    "@clerk/shared" "^0.15.8"
+    "@clerk/types" "^3.36.1"
     swr "1.3.0"
     tslib "2.4.1"
 
-"@clerk/clerk-sdk-node@^4.7.9":
-  version "4.7.9"
-  resolved "https://registry.yarnpkg.com/@clerk/clerk-sdk-node/-/clerk-sdk-node-4.7.9.tgz#81aa6c581b3bd98d6c3b2eccf73d797cb141f07d"
-  integrity sha512-AfYNfSPYvWdENoRUjt0AYlA+wyp6v9hPlTy553UILLzJxzEehZezK/6pNF+SmcjMIOZUJ3+WYzFfSlCgBNDrKg==
+"@clerk/clerk-sdk-node@^4.8.8":
+  version "4.8.8"
+  resolved "https://registry.yarnpkg.com/@clerk/clerk-sdk-node/-/clerk-sdk-node-4.8.8.tgz#a05b80ea9e17209c2197e87085c2dff4e51a07b3"
+  integrity sha512-G8/2AcXz8AT/ij0km/5fYa2O0jVjDoyo4tSVAOCP60nxqPOYLo/78LB37avjlMWU4MWX1ShDhwnJSAz5kup3Ig==
   dependencies:
-    "@clerk/backend" "^0.12.0"
-    "@clerk/types" "^3.29.0"
+    "@clerk/backend" "^0.18.1"
+    "@clerk/types" "^3.36.1"
     "@types/cookies" "0.7.7"
     "@types/express" "4.17.14"
     "@types/node-fetch" "2.6.2"
@@ -48,26 +47,27 @@
     snakecase-keys "3.2.1"
     tslib "2.4.1"
 
-"@clerk/nextjs@^4.10.1":
-  version "4.11.4"
-  resolved "https://registry.yarnpkg.com/@clerk/nextjs/-/nextjs-4.11.4.tgz#6daf888d166998ac9b04c1de480886bbac078fd4"
-  integrity sha512-w0cd59BgbAQR+/G114KefFKEdwuGE1KCeDXlPV4HSBrAhq2MTZfeSDj/PMBGk0xiYpYOSaG1S8Rm4b8KTLsAKw==
+"@clerk/nextjs@^4.17.4":
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/@clerk/nextjs/-/nextjs-4.17.4.tgz#e974cd6535e154f39e1a72d4c1680c3975b6fc02"
+  integrity sha512-pIJ26P73zgwM7RP5EiIgIha/sHJUPf9nHTh4djSpJd1E19xqFsiSrnJG7ycuzqtwgQXDC6Vi47jzrqUMR59tfA==
   dependencies:
-    "@clerk/backend" "^0.12.0"
-    "@clerk/clerk-react" "^4.12.2"
-    "@clerk/clerk-sdk-node" "^4.7.9"
-    "@clerk/types" "^3.29.0"
+    "@clerk/backend" "^0.18.1"
+    "@clerk/clerk-react" "^4.15.5"
+    "@clerk/clerk-sdk-node" "^4.8.8"
+    "@clerk/types" "^3.36.1"
+    path-to-regexp "6.2.1"
     tslib "2.4.1"
 
-"@clerk/shared@^0.12.4":
-  version "0.12.4"
-  resolved "https://registry.yarnpkg.com/@clerk/shared/-/shared-0.12.4.tgz#0fc2c91648ef55ede5372cc6cbe599a2a4fc7040"
-  integrity sha512-rBSAioTkFZKHpguoJfamQq2uC018J+dUCD4PECOqoTnrlpFkYJvchkBYq4CQhswEM8WYYkhM+Alumn2BmE7lFw==
+"@clerk/shared@^0.15.8":
+  version "0.15.8"
+  resolved "https://registry.yarnpkg.com/@clerk/shared/-/shared-0.15.8.tgz#b0134ea6810a176cf7355a7912104c7585b4abf9"
+  integrity sha512-wbZ52k+udAeLpGMV0f9gm9S7xiiv3vtHgt6zJFuS2if9UGokpMlZDcqhBu+BxSxKn1TQSpXzmN5XP9bZ+lg5jg==
 
-"@clerk/types@^3.29.0":
-  version "3.29.0"
-  resolved "https://registry.yarnpkg.com/@clerk/types/-/types-3.29.0.tgz#ed922d23b4574c3b4aa830ae99b7e3e3173ca938"
-  integrity sha512-xkJcBt5U2pIf6rww7EDnOKOGQiQEMxT3UFHDgtt9BwvHJjNOlTprHkIGJRBr3R8cHFw6tSv/wFSyZParrZswfA==
+"@clerk/types@^3.36.1":
+  version "3.36.1"
+  resolved "https://registry.yarnpkg.com/@clerk/types/-/types-3.36.1.tgz#1bc613473c199b086800ac98424afc4d596147b5"
+  integrity sha512-4uCGMS8GrRA+Ag1NvAxEeGgFkxrxJQvr7Hrw4j/iANX89uUfj6fxt/J5SCpITNqm73XUaAyFvTQ72vDEk01fwA==
   dependencies:
     csstype "3.1.1"
 
@@ -2207,6 +2207,11 @@ path-parse@^1.0.7:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
+path-to-regexp@6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.1.tgz#d54934d6798eb9e5ef14e7af7962c945906918e5"
+  integrity sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==
+
 path-type@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
@@ -2437,11 +2442,6 @@ reusify@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
-
-rfc4648@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/rfc4648/-/rfc4648-1.5.2.tgz#cf5dac417dd83e7f4debf52e3797a723c1373383"
-  integrity sha512-tLOizhR6YGovrEBLatX1sdcuhoSCXddw3mqNVAcKxGJ+J0hFeJ+SjeWCv5UPA/WU3YzWPPuCVYgXBKZUPGpKtg==
 
 rimraf@^3.0.2:
   version "3.0.2"
